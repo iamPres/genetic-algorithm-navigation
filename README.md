@@ -7,4 +7,4 @@ I have made two types of Genetic Algorithms for this project, Directional Naviga
 Using Directional Navigation, the population radiates from one fixed starting position every generation, and their goal is to get to the target. Since the populations speed decreases over time, they have to evolve to be facing in the target's direction and to be fast enough to reach the target before their speed reaches zero and a new generation begins. 
 
 ### Positional Navigation
-Using Positional Navigation, the population is not fixed to any one position. From the starting coordinates, the population uses evolution to navigate to the target without a decreasing speed. This proves to be a much quicker method of reaching the target because the population is not being reset constantly. Although, this does take many more generations.
+Using Positional Navigation, the population is not fixed to any one position. From the starting coordinates, the population uses evolution to navigate to the target without a decreasing speed. Although, it takes many more generations, this proves to be a much quicker method of reaching the target because the population is not being reset constantly.
