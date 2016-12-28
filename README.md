@@ -1,4 +1,4 @@
-## A popualtion of objects use a Genetic Algorithm to reach a target coordinate on a two dimentional plane with Processing
+## Objects use a Genetic Algorithm to reach a target with Processing
 
 You can use the [editor on GitHub](https://github.com/iamPres/genetic-algorithms/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
