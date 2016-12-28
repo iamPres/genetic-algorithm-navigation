@@ -1,37 +1,3 @@
 ## Objects use a Genetic Algorithm to reach a target with Processing
 
-You can use the [editor on GitHub](https://github.com/iamPres/genetic-algorithms/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/iamPres/genetic-algorithms/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+I have made two types of Genetic Algorithms for this project, Directional Navigation and Positional Navigation. Both have the same purpose. Reach the Target. The target is specified as a reddish ellipse in the lower right hand corner of the canvas. If you can't see it, you may want to maximize the sketch. It won't hurt it. In the upper left corner, I have placed a population of white ellipses. The black ellipse indicates the fittest object.There are two functions in every genetic algorithm, "mate()" and "mutate()." In this sketch they are conjoined to form "refine()." Throughout the generations, the genes from the fittest object are copied to the rest. This isn't the conventional mating style, but it works really well. However, if copying each others genes was all the population did, they would reach a local optimum instantly. To solve this problem, I have implemented  mutation. This adds some randomness to the genes so that the population can continue advancing. There are some additional functions for calculations.
