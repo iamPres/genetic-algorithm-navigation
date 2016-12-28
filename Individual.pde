@@ -7,14 +7,16 @@ private int[] pos = new int[2];
 private double[] ang = new double[2];
 private float[] speed = new float[2];
 private int totalError;
- 
+
+
     Individual ()
     {
-     for(int p=0;p<pool;p++)
-       {
-         speed[p] = 10;
-       }
+        for (int p=0;p<pool;p++)
+        {
+        pos[p] = 50;
+        }
     }
+    
    void physical()
    {
         
@@ -32,6 +34,14 @@ private int totalError;
  {
   pos[0] += speed[0] * ang[0];
   pos[1] += speed[1] * ang[1]; 
+ }
+ 
+ void setSpeed()
+ {
+   for (int p=0;p<pool;p++)
+   {
+ speed[p] -= 0.02;
+   }
  }
  
  void setBounds()
@@ -68,22 +78,25 @@ private int totalError;
  } 
  
  void refine ()
- {   
+ {
+   if(speed[1] < 0.01 || speed [0] < 0.01 )
+   {   
      for(int p=0;p<pool;p++)
      {
      ang[p] = fittestAng[p];
+     speed[p] = 1;
      pos[p] = 50;
      }
      gen++;
     mutate();     
-   
+   }
  }
  
  void mutate ()
  {
    for(int p=0;p<pool;p++)
    {
-   ang[p] += random(-1,1);
+   ang[p] += random(-2,2);
    }
 } 
 }
